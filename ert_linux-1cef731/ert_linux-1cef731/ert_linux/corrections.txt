@@ -1,0 +1,16 @@
+Corrections:
+
+1) Install matlab in a folder without having space 
+   in the path (eg. C:\Matlab20142\)
+
+2) In the template "ert_linux.tmf" set HOST = ANY to 
+   be able to cross compile from windows
+
+3) In the template "ert_linux.tmf" set GCC_TEST_OUT = > nul 
+   (instead of GCC_TEST_OUT = > /dev/null)
+
+4) In the code generation pane, next to the make command
+   write CC=arm-linux-gnueabihf-gcc
+
+5) For UDP blocks code generations, in "ert_linux.tmf" set
+   ADDITIONAL_LDFLAGS = -ldl
